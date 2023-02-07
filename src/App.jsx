@@ -5,7 +5,6 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import {ItemDetailContainer} from './components/ItemDetailContainer/ItemDetailContainer';
 import {CartContainer} from './components/CartContainer/CartContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useState, useEffect } from 'react';
 
 function App(props) { 
    
@@ -16,10 +15,8 @@ function App(props) {
                         <Routes>
                             <Route  path='/' element={ <ItemListContainer/> } />
                             <Route  path='/categoria/:idTipo' element={ <ItemListContainer/> } />
-
                             <Route  path='/detalle/:idProducto' element={ <ItemDetailContainer/> } />
                             <Route  path='/cart' element={ <CartContainer />  } />               
-
                             <Route path='*' element={ <Navigate to='/' /> } />
                         </Routes>
                     </div>
