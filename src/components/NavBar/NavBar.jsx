@@ -7,7 +7,7 @@ export const NavBar = () => {
   return (
     <Navbar collapseOnSelect expand="lg" style={style.menu}/*bg="dark" variant="dark"*/>
       <Container>
-        <Navbar.Brand href="" style={{color: "red"}}>ONE-CREW</Navbar.Brand>
+        <Navbar.Brand href="/#" style={{color: "red"}}>ONE-CREW</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
